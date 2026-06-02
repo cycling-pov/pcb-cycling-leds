@@ -146,7 +146,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -197,7 +197,8 @@
         0.0,
         0.2032,
         0.3048,
-        0.508
+        0.508,
+        0.762
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -231,7 +232,7 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.508,
+          "diameter": 0.635,
           "drill": 0.3048
         }
       ],
@@ -601,13 +602,31 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB",
+          "name": "JLCPCB",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -660,7 +679,7 @@
         "uuid": "57072065-8967-42f9-a9d9-fb82f71a611b"
       }
     ],
-    "used_designators": "J1-3,D1-11,#PWR1-51,C1-13,U1,TP1-2",
+    "used_designators": "J2-4,#PWR4,C35",
     "variants": []
   },
   "sheets": [
